@@ -19,28 +19,42 @@ This project utilizes Local Binary Patterns Histograms (LBPH) for facial recogni
 *(Note: The `dataset/` and `trainer/` folders are git-ignored to protect biometric data privacy. You must train your own model locally).*
 
 1. **Clone this repository:**
-   ````bash
-   git clone https://github.com/zainnaqvi-ai/Project-SonicGaze.git
+   ```bash
+   git clone [https://github.com/zainnaqvi-ai/Project-SonicGaze.git](https://github.com/zainnaqvi-ai/Project-SonicGaze.git)
    cd Project-SonicGaze
+   ```
+
 2. **Create and activate a virtual environment:**
-   ````bash
+   ```bash
    python -m venv .venv
    .venv\Scripts\activate
+   ```
+
 3. **Install dependencies and Hardware layer (Arduino code):**
-   ````bash
+   ```bash
    pip install -r requirements.txt
-Open the official Arduino IDE, load arduino_code/alarm_receiver.ino, and upload it directly onto your board. Keep the USB connection intact to allow runtime serial streaming.
+   ```
+   Open the official Arduino IDE, load `arduino_code/alarm_receiver.ino`, and upload it directly onto your board. Keep the USB connection intact to allow runtime serial streaming.
+
 4. **Webcam test:**
-   ````bash
+   ```bash
    python webcam_test.py
+   ```
+
 5. **Data Collection & Biometric Training:**
-   ````bash
+   ```bash
    python capture_faces.py
    python train_model.py
-6. **Execution:**
-   ````bash
-   python recognize_and_alert.py
+   ```
 
-## Author
-Built by Syed Ali Zain Naqvi — AI student at UMT, PIAIC AI Architect trainee.
+6. **Execution:**
+   ```bash
+   python recognize_and_alert.py
+   ```
+
+---
+
+**Author**
+
+Built by **Syed Ali Zain Naqvi** — AI student at UMT, PIAIC AI Architect trainee.
    
