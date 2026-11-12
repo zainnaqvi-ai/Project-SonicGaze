@@ -12,7 +12,7 @@ When an authorized user (trained on local data) is recognized via webcam, the Py
 ## Technical & Ethical Note on LBPH
 This project utilizes Local Binary Patterns Histograms (LBPH) for facial recognition. LBPH is highly efficient for edge devices but primarily analyzes localized facial textures and bone structure rather than deep semantic features. 
 
-**Limitation Disclosure:** Because the model is trained entirely on a single authorized user's data (1,030 images), it can occasionally be prone to false positives if an unauthorized person has highly similar localized facial textures. To mitigate this and optimize for strict security, the system's `CONFIDENCE_THRESHOLD` has been rigorously tuned down to **45**. Further tests between **25-35** were also impressive and served full security.  
+**Limitation Disclosure:** Because the model is trained entirely on a single authorized user's data (1,162 images), it can occasionally be prone to false positives if an unauthorized person has highly similar localized facial textures. To mitigate this and optimize for strict security, the system's `CONFIDENCE_THRESHOLD` has been rigorously tuned down to **45**. Further tests between **25-35** were also impressive and served full security.  
 
 ## Setup & Execution 
 
